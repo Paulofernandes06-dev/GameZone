@@ -1,0 +1,528 @@
+/* ===================================================== */
+/* CONFIGURACOES GERAIS (TODAS AS PAGINAS)              */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@400;600&display=swap');
+
+    body {
+        font-family: 'Rajdhani', Arial, sans-serif;
+        background-color: #0a0a0f;
+        background-image: radial-gradient(ellipse at top, #1a0a2e 0%, #0a0a0f 60%);
+        color: #e0e0e0;
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+/* ===================================================== */
+/* CABECALHO (TODAS AS PAGINAS)                         */
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 15px 20px 20px 20px;
+        border-bottom: 2px solid #00ffe7;
+        margin-bottom: 0;
+    }
+
+    .logo {
+        height: 38px;
+        filter: brightness(0) invert(1);
+    }
+
+    .titulo-principal {
+        font-family: 'Orbitron', Arial, sans-serif;
+        color: #00ffe7;
+        font-size: 40px;
+        margin: 0;
+        cursor: default;
+        letter-spacing: 3px;
+        text-shadow: 0 0 18px #00ffe7, 0 0 40px #7b2fff55;
+    }
+
+    .titulo-principal span {
+        color: #ff3c6e;
+        text-shadow: 0 0 18px #ff3c6e;
+    }
+
+/* ===================================================== */
+/* MENU DE NAVEGACAO (TODAS AS PAGINAS)                 */
+    .menu {
+        background-color: #12121c;
+        border: 1px solid #00ffe733;
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+        padding: 6px 10px;
+        margin-bottom: 0;
+    }
+
+    .lista-menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 4px;
+    }
+
+    .lista-menu a {
+        color: #b0b8d0;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 8px 14px;
+        border-radius: 6px;
+        display: block;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: background 0.2s, color 0.2s;
+    }
+
+    .lista-menu a:hover {
+        color: #00ffe7;
+        background-color: #00ffe712;
+    }
+
+/* ===================================================== */
+/* LINHA DIVISORIA                                      */
+    .linha-divisoria {
+        border: 0;
+        height: 2px;
+        background: linear-gradient(to right, transparent, #00ffe7, #ff3c6e, transparent);
+        margin: 22px 0;
+    }
+
+/* ===================================================== */
+/* RODAPE (TODAS AS PAGINAS)                            */
+    .rodape {
+        text-align: center;
+        color: #555;
+        padding: 22px;
+        font-size: 14px;
+        border-top: 1px solid #1e1e2e;
+        margin-top: 30px;
+        letter-spacing: 1px;
+    }
+
+    .rodape strong {
+        color: #00ffe7;
+    }
+
+/* ===================================================== */
+/* TITULOS DE SECAO (REUSAVEL)                          */
+    .titulo-secao {
+        font-family: 'Orbitron', Arial, sans-serif;
+        font-size: 22px;
+        color: #00ffe7;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #00ffe733;
+    }
+
+    .subtitulo-secao {
+        font-family: 'Orbitron', Arial, sans-serif;
+        font-size: 16px;
+        color: #ff3c6e;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 20px 0 10px 0;
+    }
+
+/* ===================================================== */
+/* CAIXA GENERICA (REUSAVEL)                            */
+    .caixa {
+        background-color: #12121c;
+        border: 1px solid #1e1e3a;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+
+    .caixa p {
+        line-height: 1.7;
+        color: #c0c8d8;
+        font-size: 16px;
+    }
+
+/* ===================================================== */
+/* PAGINA HOME (index.html)                             */
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 30px;
+        background-color: #12121c;
+        border: 1px solid #00ffe722;
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+
+    .texto-introducao {
+        flex: 1;
+        line-height: 1.7;
+        color: #c0c8d8;
+        font-size: 16px;
+        cursor: default;
+    }
+
+    .texto-introducao p {
+        margin: 0;
+    }
+
+    .botoes-acoes {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        flex-shrink: 0;
+    }
+
+    .botao {
+        text-decoration: none;
+        font-weight: 700;
+        font-family: 'Orbitron', Arial, sans-serif;
+        font-size: 13px;
+        padding: 14px 28px;
+        border-radius: 6px;
+        text-align: center;
+        letter-spacing: 1px;
+        border: 2px solid #00ffe7;
+        transition: 0.25s;
+        white-space: nowrap;
+    }
+
+    .botao-cheio {
+        background-color: #00ffe7;
+        color: #0a0a0f;
+    }
+
+    .botao-vazado {
+        color: #00ffe7;
+        background-color: transparent;
+    }
+
+    .botao:hover {
+        background-color: #ff3c6e;
+        border-color: #ff3c6e;
+        color: white;
+    }
+
+    /* Cards da home */
+    .grade-jogos {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card-jogo {
+        flex: 1;
+        min-width: 200px;
+        background-color: #12121c;
+        border: 1px solid #1e1e3a;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        transition: border-color 0.2s, transform 0.2s;
+        cursor: default;
+    }
+
+    .card-jogo:hover {
+        border-color: #00ffe7;
+        transform: translateY(-4px);
+    }
+
+    .card-jogo .icone-jogo {
+        font-size: 42px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .card-jogo h3 {
+        font-family: 'Orbitron', Arial, sans-serif;
+        color: #00ffe7;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin: 0 0 8px 0;
+    }
+
+    .card-jogo p {
+        color: #7a8099;
+        font-size: 14px;
+        margin: 0;
+    }
+
+/* ===================================================== */
+/* PAGINA FOTOS / GALERIA (fotos.html)                  */
+    .galeria-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .item-galeria {
+        width: 220px;
+        background-color: #12121c;
+        border: 1px solid #1e1e3a;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: border-color 0.2s, transform 0.2s;
+        text-align: center;
+    }
+
+    .item-galeria:hover {
+        border-color: #ff3c6e;
+        transform: scale(1.03);
+    }
+
+    .item-galeria img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .legenda-foto {
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #b0b8d0;
+        letter-spacing: 1px;
+    }
+
+/* ===================================================== */
+/* PAGINA CONTATO (contato.html)                        */
+    .contato-container {
+        max-width: 540px;
+        margin: auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 14px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #b0b8d0;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    input, select, textarea {
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #2a2a3e;
+        background-color: #0e0e18;
+        color: #e0e0e0;
+        font-family: 'Rajdhani', Arial, sans-serif;
+        font-size: 15px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: #00ffe7;
+    }
+
+    textarea {
+        height: 110px;
+        resize: none;
+    }
+
+    select option {
+        background-color: #0e0e18;
+    }
+
+    .botao-enviar {
+        margin-top: 18px;
+        padding: 12px;
+        background-color: #00ffe7;
+        color: #0a0a0f;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: 'Orbitron', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        transition: background 0.2s;
+    }
+
+    .botao-enviar:hover {
+        background-color: #ff3c6e;
+        color: white;
+    }
+
+/* ===================================================== */
+/* PAGINA LINKS (links.html)                            */
+    .lista-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .lista-links li {
+        background-color: #12121c;
+        border: 1px solid #1e1e3a;
+        border-radius: 8px;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        transition: border-color 0.2s;
+    }
+
+    .lista-links li:hover {
+        border-color: #00ffe7;
+    }
+
+    .lista-links .icone-link {
+        font-size: 28px;
+        flex-shrink: 0;
+    }
+
+    .lista-links a {
+        color: #00ffe7;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        display: block;
+        letter-spacing: 1px;
+    }
+
+    .lista-links a:hover {
+        color: #ff3c6e;
+    }
+
+    .lista-links .descricao-link {
+        color: #7a8099;
+        font-size: 14px;
+        margin: 3px 0 0 0;
+    }
+
+/* ===================================================== */
+/* PAGINA SOBRE (sobre.html)                            */
+    .lista-ordenada {
+        padding-left: 20px;
+        color: #c0c8d8;
+        line-height: 2;
+        font-size: 16px;
+    }
+
+    .lista-nao-ordenada {
+        list-style: none;
+        padding: 0;
+        color: #c0c8d8;
+        line-height: 2;
+        font-size: 16px;
+    }
+
+    .lista-nao-ordenada li::before {
+        content: "▸ ";
+        color: #00ffe7;
+    }
+
+/* ===================================================== */
+/* PAGINA NOTICIAS (noticias.html)                      */
+
+    .grade-noticias {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .card-noticia {
+        background-color: #12121c;
+        border: 1px solid #1e1e3a;
+        border-left: 4px solid #00ffe7;
+        border-radius: 8px;
+        padding: 20px;
+        transition: border-color 0.2s;
+    }
+
+    .card-noticia:hover {
+        border-color: #ff3c6e;
+        border-left-color: #ff3c6e;
+    }
+
+    .card-noticia h3 {
+        font-family: 'Orbitron', Arial, sans-serif;
+        color: #e0e0e0;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin: 0 0 8px 0;
+    }
+
+    .card-noticia p {
+        color: #7a8099;
+        font-size: 15px;
+        margin: 0 0 10px 0;
+        line-height: 1.6;
+    }
+
+    .data-noticia {
+        font-size: 13px;
+        color: #ff3c6e;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+/* ===================================================== */
+/* TABELA (reusavel)                                    */
+    .tabela-dados {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+    }
+
+    .tabela-dados th {
+        background-color: #00ffe715;
+        color: #00ffe7;
+        font-family: 'Orbitron', Arial, sans-serif;
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding: 12px 16px;
+        text-align: left;
+        border-bottom: 2px solid #00ffe733;
+    }
+
+    .tabela-dados td {
+        padding: 11px 16px;
+        border-bottom: 1px solid #1e1e3a;
+        color: #c0c8d8;
+    }
+
+    .tabela-dados tr:hover td {
+        background-color: #00ffe708;
+    }
+
+/* ===================================================== */
+/* PAGINA FAQ (faq.html)                                */
+    .item-faq {
+        background-color: #12121c;
+        border: 1px solid #1e1e3a;
+        border-radius: 8px;
+        padding: 18px 22px;
+        margin-bottom: 14px;
+    }
+
+    .pergunta-faq {
+        font-family: 'Orbitron', Arial, sans-serif;
+        color: #00ffe7;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin: 0 0 10px 0;
+    }
+
+    .resposta-faq {
+        color: #b0b8d0;
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 0;
+    }
