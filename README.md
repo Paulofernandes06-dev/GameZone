@@ -1,4 +1,3 @@
-markdown
 # Projeto Web - Estilo Cyberpunk
 
 Este é um projeto acadêmico de um site multi-páginas desenvolvido com HTML5 e CSS3, focado em uma interface visual futurista e moderna.
